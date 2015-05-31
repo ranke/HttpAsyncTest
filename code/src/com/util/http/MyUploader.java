@@ -11,8 +11,14 @@ import java.util.Map;
 
 import android.util.Log;
 
+/**
+ * 
+ * 同步上传多个文件
+ * 基于标准的http实现，需要在非UI线程中调用，以免阻塞UI。
+ *
+ */
 public class MyUploader {
-	private static final String TAG = "MyImageDownLoader";
+	private static final String TAG = "MyUploader";
 	
 	// ////////////////////同步上传多个文件/////////
 		/**
